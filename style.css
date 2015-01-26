@@ -1019,7 +1019,3 @@ img {
 
 /* Dotclear Specific */
 
-/* Hide Simplemenu menuitem description */
-.simple-menu li a span {
-  display: none;
-}
