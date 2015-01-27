@@ -1007,6 +1007,7 @@ img {
 .widget {
   margin-bottom: 3em; }
 
+div.widget h3,
 .widget-title,
 .widgettitle {
   border-bottom: 2px solid #000;
@@ -1017,5 +1018,10 @@ img {
 
 /*# sourceMappingURL=style.css.map */
 
-/* Dotclear Specific */
+/* Specific Dotclear */
 
+div.widget h3 {   /* Emulate h1.widget-title */
+  border-bottom: 2px solid #000;
+  margin-bottom: 0.75em;
+  font-size: 2em;
+}

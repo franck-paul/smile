@@ -113,12 +113,12 @@
 			</div>
 		</tpl:Block>	<!-- page-top -->
 
-		<div id="page">
+		<div id="page" class="site-content">
 			<tpl:Block name="body-page">
 
-				<div id="wrapper">
+				<section id="primary" class="content-area">
 					<tpl:Block name="page-wrapper">
-						<div id="main" role="main">
+						<div id="main" class="site-main" role="main">
 							<tpl:Block name="wrapper-main">
 								<div id="content">
 									<tpl:Block name="main-content">
@@ -153,17 +153,19 @@
 							</tpl:Block>	<!-- wrapper-main -->
 						</div> <!-- End #main -->
 
-						<tpl:Block name="wrapper-sidebar">
-							{{tpl:include src="_sidebar.html"}}
-						</tpl:Block>	<!-- wrapper-sidebar -->
 					</tpl:Block>	<!-- page-wrapper -->
-				</div> <!-- End #wrapper -->
+				</section> <!-- End #primary -->
 
-				<tpl:Block name="page-footer">
-					{{tpl:include src="_footer.html"}}
-				</tpl:Block>	<!-- page-footer -->
 			</tpl:Block>	<!-- body-page -->
 		</div> <!-- End #page -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<tpl:Block name="wrapper-sidebar">
+				{{tpl:include src="_sidebar.html"}}
+			</tpl:Block>	<!-- wrapper-sidebar -->
+			<tpl:Block name="page-footer">
+				{{tpl:include src="_footer.html"}}
+			</tpl:Block>	<!-- page-footer -->
+		</footer>
 	</tpl:Block>	<!-- html-body -->
 </body>
 </html>
