@@ -1,0 +1,64 @@
+<article id="p{{tpl:EntryID}}" class="post short {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}" lang="{{tpl:EntryLang}}" role="article">
+
+	<header class="entry-header">
+		<tpl:EntryIf has_category="1">
+		<span class="post-cat"><tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:CategoryURL}}">{{tpl:CategoryTitle encode_html="1"}}</a> › </tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:EntryCategoryURL}}">{{tpl:EntryCategory encode_html="1"}}</a></span>
+		</tpl:EntryIf>
+		<h1 class="entry-title"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h1>
+		<div class="entry-meta">
+			<p class="post-info">
+				<span class="post-on">{{tpl:lang Posted on}} {{tpl:EntryDate}}</span>
+				<span class="byline">{{tpl:lang by}} {{tpl:EntryAuthorLink}}</span>
+			</p>
+			<tpl:EntryIf comments_active="1">
+				<span class="comments-link">
+					<a href="{{tpl:EntryURL}}#comments">{{tpl:lang Leave a comment}}</a>
+				</span>
+			</tpl:EntryIf>
+		</div>
+	</header>
+
+	<section class="entry-content">
+		<div class="entry-text">
+			<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+			{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+
+			<!-- # Entry with an excerpt -->
+			<tpl:EntryIf extended="1">
+				<div class="post-content">
+					{{tpl:EntryExcerpt}}
+				</div>
+				<p class="post-read-it"><a href="{{tpl:EntryURL}}" class="more-link"
+				 title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p>
+			</tpl:EntryIf>
+
+			<!-- # Entry without excerpt -->
+			<tpl:EntryIf extended="0">
+				<div class="post-content">
+					<p>
+						{{tpl:EntryContent encode_html="1" remove_html="1" cut_string="300"}}
+					</p>
+				</div>
+				<p class="post-read-it"><a href="{{tpl:EntryURL}}"
+				 title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p>
+			</tpl:EntryIf>
+
+			<!-- # --BEHAVIOR-- publicEntryAfterContent -->
+			{{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+		</div>
+		<div class="footer-meta">
+			<tpl:EntryTags>
+				<tpl:TagsHeader>
+					<span class="tags-links">
+				</tpl:TagsHeader>
+					<a rel="tag" href="{{tpl:TagURL}}">{{tpl:TagID}}</a>
+				<tpl:TagsFooter>
+					</span>
+				</tpl:TagsFooter>
+			</tpl:EntryTags>
+		</div>
+	</section>
+
+</article>
