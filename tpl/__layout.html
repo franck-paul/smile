@@ -101,7 +101,15 @@
 				</div>
 			</div>
 			<div id="header-search-container">
-
+				<form class="search-form" action="{{tpl:BlogURL}}" method="get" role="search">
+					<label>
+						<span class="screen-reader-text">
+							{{tpl:lang Search for:}}
+						</span>
+						<input class="search-field" type="search" title="{{tpl:lang Search for:}}" name="q" value="" id="q" placeholder="{{tpl:lang Search …}}"></input>
+					</label>
+					<input class="search-submit" type="submit" value="Search"></input>
+				</form>
 			</div>
 		</tpl:Block>	<!-- page-top -->
 
