@@ -14,7 +14,7 @@
 			</p>
 			<tpl:EntryIf comments_active="1">
 				<span class="comments-link">
-					<a href="{{tpl:EntryURL}}#comments">{{tpl:lang Leave a comment}}</a>
+					<a href="{{tpl:EntryURL}}#comments">{{tpl:EntryCommentCount count_all="1" none="Leave a comment" one="One reaction" more="%s reactions"}}</a>
 				</span>
 			</tpl:EntryIf>
 		</div>

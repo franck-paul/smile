@@ -19,6 +19,16 @@ Thème pour [Dotclear 2](http://fr.dotclear.org/) adapté du l'éponyme thème S
 
 Ce thème est pure css, mono-colonne (les widgets sont positionnés en bas de la page), responsive et utilise le jeu de template currywurst.
 
+## Plugins tiers
+
+Ce thème prend d'ores et déjà en charge les plugins [contactMe](http://plugins.dotaddict.org/dc2/details/contactMe), [series](http://plugins.dotaddict.org/dc2/details/series) et [gravatar](http://plugins.dotaddict.org/dc2/details/gravatar).
+
+Pour le plugin Gravatar, il faut, une fois ce dernier activé pour le blog :
+
+* Désactiver l'insertion automatique pour les billets et les commentaires
+* Définir la taille de l'image pour les commentaires à 64 pixels
+* Supprimer (ou mettre en commentaire) les éventuels styles
+
 ## History
 
 * 1.0 Initial release

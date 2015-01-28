@@ -1,0 +1,16 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	<header class="page-header">
+		<h1>{{tpl:lang Document not found}}</h1>
+		<p>{{tpl:lang URL you've tried has typos, or the page has been deleted or moved.}}</p>
+	</header>
+
+	<div class="content-inner">
+		<h2>{{tpl:lang Suggestions:}}</h2>
+		<ul>
+			<li><a href="{{tpl:BlogURL}}">{{tpl:lang Go to homepage}}</a></li>
+			<li><a href="{{tpl:BlogURL}}archive">{{tpl:lang Explore archives}}</a></li>
+		</ul>
+	</div> <!-- End #content-inner -->
+</tpl:Block>
