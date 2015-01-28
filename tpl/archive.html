@@ -9,12 +9,12 @@
 
 		<div id="time-criteria"><!-- entries sorted by date -->
 			<div id="arch-by-year" class="arch-block arch-by-year">
-				<h3>{{tpl:lang By date}}</h3>
+				<h2>{{tpl:lang By date}}</h2>
 				<p class="fromto">{{tpl:lang FromDay}} <tpl:Entries no_content="1" order="asc" lastn="1"><a href="{{tpl:EntryURL}}">{{tpl:EntryDate format="%e %B %Y"}}</a></tpl:Entries> {{tpl:lang toDay}} <tpl:Entries no_content="1" order="desc" lastn="1"><a href="{{tpl:EntryURL}}">{{tpl:EntryDate format="%e %B %Y"}}</a></tpl:Entries></p>
 				<tpl:Archives order="asc">
 					<tpl:ArchivesYearHeader>
 						<div class="arch-by-year__each-year">
-							<h4>{{tpl:ArchiveDate format="%Y"}}</h4>
+							<h3>{{tpl:ArchiveDate format="%Y"}}</h3>
 							<ul class="arch-list arch-year-list">
 					</tpl:ArchivesYearHeader>
 								<li><a href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html="1"}}">{{tpl:ArchiveDate encode_html="1" format="%B"}}</a>
@@ -31,7 +31,7 @@
 			<tpl:Categories level="1">
 				<tpl:CategoriesHeader>
 					<div id="arch-by-cat" class="arch-block arch-by-cat">
-						<h3>{{tpl:lang By category}}</h3>
+						<h2>{{tpl:lang By category}}</h2>
 						<ul class="arch-list arch-cat-list">
 							</tpl:CategoriesHeader>
 							<li><a href="{{tpl:CategoryURL}}">{{tpl:CategoryTitle encode_html="1"}}</a>
@@ -54,10 +54,12 @@
 			<tpl:Tags sortby="count" order="desc">
 				<tpl:TagsHeader>
 					<div id="arch-by-tag" class="arch-block arch-by-tag">
-						<h3>{{tpl:lang By tag}}</h3>
-						<ul class="arch-list arch-tag-list">
+						<h2>{{tpl:lang By tag}}</h2>
+						<ul class="tags">
 				</tpl:TagsHeader>
-							<li><a href="{{tpl:TagURL}}" class="tag{{tpl:TagRoundPercent}}">{{tpl:TagID}}</a></li>
+							<li>
+								<a href="{{tpl:TagURL}}" class="tag{{tpl:TagRoundPercent}}">{{tpl:TagID}}</a>
+							</li>
 				<tpl:TagsFooter>
 						</ul>
 					</div>
@@ -69,7 +71,7 @@
 			<div id="arch-by-page" class="arch-block arch-by-page">
 				<tpl:Entries type="page" no_content="1" lastn="0" selected="0">
 					<tpl:EntriesHeader>
-						<h3>{{tpl:lang Pages}}</h3>
+						<h2>{{tpl:lang Pages}}</h2>
 						<ul class="arch-list arch-page-list">
 					</tpl:EntriesHeader>
 							<li><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></li>

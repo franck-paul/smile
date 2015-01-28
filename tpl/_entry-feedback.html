@@ -11,17 +11,21 @@
 		</tpl:CommentsHeader>
 			<tpl:CommentIf is_ping="0">
 				<li id="c{{tpl:CommentID}}" class="comment {{tpl:CommentIfMe}} {{tpl:CommentIfOdd}} {{tpl:CommentIfFirst}}">
-			<tpl:else>
+			{{tpl:else}}
 				<li id="c{{tpl:PingID}}" class="comment ping {{tpl:PingIfOdd}} {{tpl:PingIfFirst}}">
 			</tpl:CommentIf>
 				<tpl:CommentIf is_ping="0">
 					<article id="div-{{tpl:CommentID}}" class="comment-body">
-				<tpl:else>
+				{{tpl:else}}
 					<article id="div-{{tpl:PingID}}" class="comment-body">
 				</tpl:CommentIf>
 						<footer class="comment-meta">
 							<div class="comment-author">
-								{{tpl:CommentAuthorGravatar}}
+								<tpl:SysIf has_tag="CommentAuthorGravatar">
+									{{tpl:CommentAuthorGravatar}}
+								{{tpl:else}}
+									<img src="{{tpl:BlogThemeURL}}/img/gravatar.png" width="64" height="64" />
+								</tpl:SysIf>
 								<b class="fn">{{tpl:CommentAuthorLink}}</b>
 							</div>
 							<span class="says">{{tpl:lang says:}}</span>
