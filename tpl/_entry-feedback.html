@@ -70,8 +70,8 @@
 		<h3 id="reply-title" class="comment-reply-title">{{tpl:lang Add a comment}}</h3>
 		<form class="comment-form" action="{{tpl:EntryURL}}#pr" method="post" id="commentform" role="form">
 			<tpl:IfCommentPreview>
-				<div id="pr">
-					<h3>{{tpl:lang Your comment}}</h3>
+				<div id="pr" class="children">
+					<h4>{{tpl:lang Your comment}}</h4>
 					<div class="comment-preview">{{tpl:CommentPreviewContent}}</div>
 					<p class="buttons"><button type="submit" class="submit" value="{{tpl:lang Send}}">{{tpl:lang Send}}</button></p>
 				</div>
