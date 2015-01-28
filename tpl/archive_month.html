@@ -1,0 +1,35 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	<header class="page-header">
+		<h1>{{tpl:ArchiveDate}} <span>({{tpl:ArchiveEntriesCount}})</span></h1>
+	</header>
+
+	<nav class="pagination paging-navigation topnl" role="navigation">
+		<h1 class="screen-reader-text">{{tpl:lang Pagination by month}}</h1>
+		<div class="pagination loop-pagination">
+			<p class="navlinks topnl">
+				<tpl:ArchivePrevious><a href="{{tpl:ArchiveURL}}" class="prev page-numbers">{{tpl:ArchiveDate encode_html="1"}}</a></tpl:ArchivePrevious>
+				<span class="page-numbers current">{{tpl:ArchiveDate}}</span>
+				<tpl:ArchiveNext><a href="{{tpl:ArchiveURL}}" class="next page-numbers">{{tpl:ArchiveDate encode_html="1"}}</a></tpl:ArchiveNext>
+			</p>
+		</div>
+	</nav>
+
+	<div class="content-inner">
+		<tpl:Entries>
+			{{tpl:include src="_entry-short.html"}}
+		</tpl:Entries>
+	</div>
+
+	<nav class="pagination paging-navigation topnl" role="navigation">
+		<h1 class="screen-reader-text">{{tpl:lang Pagination by month}}</h1>
+		<div class="pagination loop-pagination">
+			<p class="navlinks topnl">
+				<tpl:ArchivePrevious><a href="{{tpl:ArchiveURL}}" class="prev page-numbers">{{tpl:ArchiveDate encode_html="1"}}</a></tpl:ArchivePrevious>
+				<span class="page-numbers current">{{tpl:ArchiveDate}}</span>
+				<tpl:ArchiveNext><a href="{{tpl:ArchiveURL}}" class="next page-numbers">{{tpl:ArchiveDate encode_html="1"}}</a></tpl:ArchiveNext>
+			</p>
+		</div>
+	</nav>
+</tpl:Block>

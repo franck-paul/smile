@@ -1,16 +1,16 @@
 <tpl:Pagination>
-    <nav class="pagination paging-navigation" role="navigation">
-        <h1 class="screen-reader-text">{{tpl:lang Pagination}}</h1>
-        <div class="pagination loop-pagination">
-            <tpl:PaginationIf end="0">
-                <a href="{{tpl:PaginationURL offset=" +1 "}}" class="prev page-numbers">{{tpl:lang previous entries}}</a>
-            </tpl:PaginationIf>
+	<nav class="pagination paging-navigation" role="navigation">
+		<h1 class="screen-reader-text">{{tpl:lang Pagination}}</h1>
+		<div class="pagination loop-pagination">
+			<tpl:PaginationIf end="0">
+				<a href="{{tpl:PaginationURL offset=" +1 "}}" class="prev page-numbers">{{tpl:lang previous entries}}</a>
+			</tpl:PaginationIf>
 
-            <span class="page-numbers current">{{tpl:lang Page}} {{tpl:PaginationCurrent}} {{tpl:lang of}} {{tpl:PaginationCounter}}</span>
+			<span class="page-numbers current">{{tpl:lang Page}} {{tpl:PaginationCurrent}} {{tpl:lang of}} {{tpl:PaginationCounter}}</span>
 
-            <tpl:PaginationIf start="0"><a href="{{tpl:PaginationURL offset=" -1 "}}" class="next page-numbers">
+			<tpl:PaginationIf start="0"><a href="{{tpl:PaginationURL offset=" -1 "}}" class="next page-numbers">
 				{{tpl:lang next entries}}</a>
-            </tpl:PaginationIf>
-        </div>
-    </nav>
+			</tpl:PaginationIf>
+		</div>
+	</nav>
 </tpl:Pagination>
