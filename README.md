@@ -17,7 +17,7 @@ Thème pour [Dotclear 2](http://fr.dotclear.org/) adapté du l'éponyme thème S
 
 ![Aperçu](http://media.dotaddict.org/pda/tdc2/smile/smile.jpg)
 
-Ce thème est pure css, mono-colonne (les widgets sont positionnés en bas de la page), responsive et utilise le jeu de template currywurst.
+Ce thème est mono-colonne (les widgets sont positionnés en bas de la page), responsive et utilise le jeu de template currywurst.
 
 ## Plugins tiers
 
