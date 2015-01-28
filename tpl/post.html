@@ -1,0 +1,27 @@
+{{tpl:extends parent="__parent__"}}
+
+<tpl:Block name="main-content">
+	{{tpl:include src="_simple-entry.html"}}
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">{{tpl:lang Post navigation}}</h1>
+		<div class="nav-links">
+			<tpl:EntryPrevious>
+				<div class="nav-previous">
+					<span>{{tpl:lang Previous post}}</span>
+					<a href="{{tpl:EntryURL}}"
+					 title="{{tpl:EntryTitle encode_html="1"}}" class="prev">{{tpl:EntryTitle encode_html="1" cut_string="50"}}</a>
+	 			</div>
+			</tpl:EntryPrevious>
+			<tpl:EntryNext>
+				<div class="nav-next">
+						<span>{{tpl:lang Next post}}</span>
+						<a href="{{tpl:EntryURL}}"
+						 title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle encode_html="1" cut_string="50"}}</a>
+	 			</div>
+			</tpl:EntryNext>
+		</div>
+	</nav>
+
+	{{tpl:include src="_entry-feedback.html"}}
+</tpl:Block>

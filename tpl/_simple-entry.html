@@ -1,0 +1,71 @@
+<article class="post simple" id="p{{tpl:EntryID}}" role="article">
+
+	<header class="entry-header">
+		<tpl:EntryIf has_category="1">
+		<span class="cat-links"><tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:CategoryURL}}" rel="category tag">{{tpl:CategoryTitle encode_html="1"}}</a> › </tpl:EntryCategoriesBreadcrumb><a
+			href="{{tpl:EntryCategoryURL}}" rel="category tag">{{tpl:EntryCategory encode_html="1"}}</a></span>
+		</tpl:EntryIf>
+		<h1 class="entry-title"><a rel="bookmark" href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h1>
+		<div class="entry-meta">
+			<p class="post-info">
+				<span class="post-on">{{tpl:lang Posted on}} <time datetime="{{tpl:EntryDate iso8601="1"}}">{{tpl:EntryDate}}</time></span>
+				<span class="byline">{{tpl:lang by}} {{tpl:EntryAuthorLink}}</span>
+			</p>
+		</div>
+	</header>
+
+	<section class="entry-content">
+		<div class="entry-text">
+			<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+			{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+
+			<tpl:EntryIf extended="1">
+				<div class="post-excerpt">{{tpl:EntryExcerpt}}</div>
+			</tpl:EntryIf>
+
+			<div class="post-content">{{tpl:EntryContent}}</div>
+
+			<!-- # --BEHAVIOR-- publicEntryAfterContent -->
+			{{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+		</div>
+
+		<!-- # Attachments -->
+		<tpl:Attachments>
+			<tpl:AttachmentsHeader>
+				<div class="post-attachments" id="attachments">
+					<h3 class="post-attachments-title">{{tpl:lang Attachments}}</h3>
+					<ul class="post-attachments-list">
+			</tpl:AttachmentsHeader>
+						<li class="post-attachments-item {{tpl:AttachmentType}}">
+							<tpl:AttachmentIf is_mp3="1">
+								{{tpl:include src="_mp3_player.html"}} -
+							</tpl:AttachmentIf>
+							<tpl:AttachmentIf is_flv="1">
+								{{tpl:include src="_flv_player.html"}}
+							</tpl:AttachmentIf>
+							<tpl:AttachmentIf is_flv="0">
+								<a href="{{tpl:AttachmentURL}}"
+								 title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
+							</tpl:AttachmentIf>
+						</li>
+			<tpl:AttachmentsFooter>
+					</ul>
+				</div>
+			</tpl:AttachmentsFooter>
+		</tpl:Attachments>
+
+		<div class="footer-meta">
+			<tpl:EntryTags>
+				<tpl:TagsHeader>
+					<span class="tags-links">
+				</tpl:TagsHeader>
+					<a rel="tag" href="{{tpl:TagURL}}">{{tpl:TagID}}</a>
+				<tpl:TagsFooter>
+					</span>
+				</tpl:TagsFooter>
+			</tpl:EntryTags>
+		</div>
+	</section>
+
+</article>

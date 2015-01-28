@@ -9,7 +9,7 @@
 		<h1 class="entry-title"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h1>
 		<div class="entry-meta">
 			<p class="post-info">
-				<span class="post-on">{{tpl:lang Posted on}} {{tpl:EntryDate}}</span>
+				<span class="post-on">{{tpl:lang Posted on}} <time datetime="{{tpl:EntryDate iso8601="1"}}">{{tpl:EntryDate}}</time></span>
 				<span class="byline">{{tpl:lang by}} {{tpl:EntryAuthorLink}}</span>
 			</p>
 			<tpl:EntryIf comments_active="1">
