@@ -1,42 +1,45 @@
 <nav role="navigation">
-	<ul class="skip-links screen-reader-text" id="prelude">
-		<li><a href="#main">{{tpl:lang To content}}</a></li>
-		<li><a href="#blognav">{{tpl:lang To menu}}</a></li>
-		<li><a href="#search">{{tpl:lang To search}}</a></li>
-	</ul>
+    <ul class="skip-links screen-reader-text" id="prelude">
+        <li><a href="#main">{{tpl:lang To content}}</a>
+        </li>
+        <li><a href="#blognav">{{tpl:lang To menu}}</a>
+        </li>
+        <li><a href="#search">{{tpl:lang To search}}</a>
+        </li>
+    </ul>
 </nav>
 <header class="site-header" id="masthead" role="banner">
-	<div class="site-branding">
-		<h1 class="site-title"><a class="site-title__link"
+    <div class="site-branding">
+        <h1 class="site-title"><a class="site-title__link"
 			href="{{tpl:BlogURL}}"><span class="site-title__text">{{tpl:BlogName encode_html="1"}}</span></a></h1>
-		<p class="site-description">{{tpl:BlogDescription}}</p>
-	</div>
-	<!-- # --BEHAVIOR-- publicTopAfterContent -->
-	{{tpl:SysBehavior behavior="publicTopAfterContent"}}
+        <p class="site-description">{{tpl:BlogDescription}}</p>
+    </div>
+    <!-- # --BEHAVIOR-- publicTopAfterContent -->
+    {{tpl:SysBehavior behavior="publicTopAfterContent"}}
 </header>
 <div id="header-top-bar-wrapper">
-	<div id="header-top-bar">
-		<nav class="main-navigation" id="site-navigation" role="navigation">
-			<h1 id="js-menu-toggle">{{tpl:lang MENU}}</h1>
-			<div id="navigation-panel">
-				<div class="menu">
-					{{tpl:SimpleMenu description="title"}}
-				</div>
-			</div>
-		</nav>
-		<div id="js-search-toggle">
-			<span class="genericon genericon-search"></span>
-		</div>
-	</div>
+    <div id="header-top-bar">
+        <nav class="main-navigation" id="site-navigation" role="navigation">
+            <h1 id="js-menu-toggle">{{tpl:lang MENU}}</h1>
+            <div id="navigation-panel">
+                <div class="menu">
+                    {{tpl:SimpleMenu description="title"}}
+                </div>
+            </div>
+        </nav>
+        <div id="js-search-toggle">
+            <span class="genericon genericon-search"></span>
+        </div>
+    </div>
 </div>
 <div id="header-search-container">
-	<form class="search-form" action="{{tpl:BlogURL}}" method="get" role="search">
-		<label>
-			<span class="screen-reader-text">
+    <form class="search-form" action="{{tpl:BlogURL}}" method="get" role="search">
+        <label>
+            <span class="screen-reader-text">
 				{{tpl:lang Search for:}}
 			</span>
-			<input class="search-field" type="search" title="{{tpl:lang Search for:}}" name="q" value="" id="q" placeholder="{{tpl:lang Search …}}"></input>
-		</label>
-		<input class="search-submit" type="submit" value="Search"></input>
-	</form>
+            <input class="search-field" type="search" title="{{tpl:lang Search for:}}" name="q" value="" id="q" placeholder="{{tpl:lang Search …}}"></input>
+        </label>
+        <input class="search-submit" type="submit" value="Search"></input>
+    </form>
 </div>
