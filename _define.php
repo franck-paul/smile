@@ -19,7 +19,9 @@ $this->registerModule(
 	/* Author */		"Franck Paul",
 	/* Version */		'1.0',
 	array(
-		/* Type */		'type' =>	'theme',
-		/* tplset */	'tplset' =>	'currywurst'
+		/* Type */				'type' =>					'theme',
+		/* tplset */			'tplset' =>					'currywurst',
+		/* Widget title */		'widgettitleformat' =>		'<h1 class="widget-title">%s</h1>',
+		/* Widget subtitle */	'widgetsubtitleformat' =>	'<h2 class="widget-subtitle">%s</h2>'
 	)
 );
