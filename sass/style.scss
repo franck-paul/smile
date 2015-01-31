@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Smile
+Author: Stephen Dickinson
+Author URI: http://stephencottontail.wordpress.com/
+Description: It's a wonderful day with Smile, a bright yellow and pink theme that'll bring out the joy in your blog. Smile is fully responsive and features an elegant one-column layout. Smile also features three footer widget areas, allowing you full flexibility when setting up your site.
+Version: 1.0.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: smile
+Tags: yellow, pink, light, one-column, fluid-layout, responsive-layout, custom-header, custom-menu, post-formats, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Smile is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc. Underscores is available at http://underscores.me/
+
+This theme makes use of Bourbon, Bitters, Neat, Sass, Genericons, and the Google fonts Lato and PT Serif.
+  Bourbon: http://bourbon.io/
+  Bitters: http://bitters.bourbon.io/
+  Neat: http://neat.bourbon.io/
+  Sass: http://sass-lang.com/
+  Genericons: http://genericons.com/
+*/
+
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+@import "globals";
+@import "partials/a11y";
+@import "partials/author";
+@import "partials/comments";
+@import "partials/content";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/media";
+@import "partials/navigation";
+@import "partials/widgets";

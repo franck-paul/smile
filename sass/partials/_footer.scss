@@ -1,0 +1,158 @@
+#colophon {
+  background: $rose-pink;
+  -webkit-box-shadow: 0px 3px 4px 4px rgba(50, 50, 50, 0.33);
+  -moz-box-shadow:    0px 3px 4px 4px rgba(50, 50, 50, 0.33);
+  box-shadow:         0px 3px 4px 4px rgba(50, 50, 50, 0.33);
+  padding: ($base-spacing / 2) ($base-spacing / 3);
+
+  a {
+    color: #000;
+    font-weight: bold;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+#footer-top-bar {
+  @include outer-container();
+
+  margin-bottom: $base-spacing;
+
+  .site-info {
+    @include span-columns(4);
+
+    @include media($large-screen-up) {
+      @include span-columns(6 of 12);
+    }
+  }
+
+  .social-media {
+    @include span-columns(4);
+
+    @include media($large-screen-up) {
+      @include span-columns(6 of 12);
+      @include omega();
+    }
+  }
+}
+
+.social-media {
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: ($base-spacing / 3);
+
+    a:before {
+      content: '\f511';
+      font-family: "Genericons";
+      font-size: 24px;
+    }
+  }
+
+  li a[href*="wordpress.org"]::before,
+  li a[href*="wordpress.com"]::before {
+	  content: '\f205';
+	}
+
+	li a[href*="facebook.com"]::before {
+		content: '\f203';
+  }
+
+	li a[href*="twitter.com"]::before {
+		content: '\f202';
+	}
+
+	li a[href*="dribbble.com"]::before {
+		content: '\f201';
+	}
+
+	li a[href*="plus.google.com"]::before {
+    content: '\f206';
+  }
+
+  li a[href*="pinterest.com"]::before {
+    content: '\f210';
+  }
+
+  li a[href*="github.com"]::before {
+    content: '\f200';
+  }
+
+  li a[href*="tumblr.com"]::before {
+    content: '\f214';
+  }
+
+  li a[href*="youtube.com"]::before {
+    content: '\f213';
+  }
+
+  li a[href*="flickr.com"]::before {
+    content: '\f211';
+  }
+
+  li a[href*="vimeo.com"]::before {
+    content: '\f212';
+  }
+
+  li a[href*="instagram.com"]::before {
+    content: '\f215';
+  }
+
+  li a[href*="codepen.io"]::before {
+    content: '\f216';
+  }
+
+  li a[href*="linkedin.com"]::before {
+    content: '\f208';
+  }
+
+}
+
+#footer-widget-area {
+  @include outer-container();
+
+  .footer-area-1 {
+    @include span-columns(4);
+
+    @include media($medium-screen-only) {
+      @include span-columns(2 of 6);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+    }
+  }
+
+  .footer-area-2 {
+    @include span-columns(4);
+
+    @include media($medium-screen-only) {
+      @include span-columns(2 of 6);
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+    }
+  }
+
+  .footer-area-3 {
+    @include span-columns(4);
+
+    @include media($medium-screen-only) {
+      @include span-columns(2 of 6);
+      @include omega();
+    }
+
+    @include media($large-screen-up) {
+      @include span-columns(4 of 12);
+      @include omega();
+    }
+  }
+}

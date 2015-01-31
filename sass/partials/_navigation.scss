@@ -1,0 +1,56 @@
+.paging-navigation {
+  @include clearfix();
+
+  line-height: 40px;
+  margin: $base-spacing 0;
+  text-align: center;
+}
+
+.page-numbers {
+  border: 1px solid $base-border-color;
+  border-radius: 3px;
+  padding: ($base-spacing / 4) ($gutter / 2);
+
+  @at-root {
+    a#{&} {
+      @include transition(all 0.2s ease-in-out);
+
+      font-weight: bold;
+
+      &:hover {
+        background: $rose-pink;
+        border: 1px solid $rose-pink;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.post-navigation {
+  @include outer-container();
+
+  margin-bottom: $base-spacing;
+
+  span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .nav-previous {
+    @include span-columns(2);
+
+    text-align: right;
+  }
+
+  .nav-next {
+    @include span-columns(2);
+    @include omega();
+
+    text-align: left;
+  }
+}
+
+.comment-navigation {
+  margin: ($base-spacing / 2) 0;
+}

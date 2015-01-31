@@ -1,0 +1,245 @@
+#masthead {
+  background: $rose-pink;
+}
+
+.custom-header {
+  background: no-repeat center;
+  background-size: cover !important;
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+}
+
+.header-image {
+  line-height: 0;
+  margin: 0;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.site-branding {
+  padding: $base-spacing 0;
+  text-align: center;
+
+  .site-description {
+    @include adjust-font-size(em(18));
+  }
+
+  @include media($large-screen-up) {
+    padding: ($base-spacing * 2) 0;
+  }
+}
+
+#header-top-bar-wrapper {
+  background: darken($rose-pink, 5);
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+}
+
+#header-top-bar {
+  @include outer-container();
+
+  position: relative;
+}
+
+#js-menu-toggle {
+  cursor: pointer;
+  display: inline;
+  line-height: 45px;
+  padding: 0 ($base-spacing / 3);
+}
+
+#js-search-toggle {
+  cursor: pointer;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .genericon {
+    font-size: 36px;
+    padding: 5px 15px;
+  }
+
+  &.active .genericon {
+    background: $rose-pink;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(2 of 12);
+    @include omega();
+  }
+}
+
+#site-navigation {
+  float: left;
+  position: relative;
+  width: 100%;
+
+  #navigation-panel {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+  }
+
+  .children,
+  .sub-menu {
+    display: none;
+
+    &.on {
+      display: block;
+    }
+  }
+
+  a {
+    color: #000;
+    display: block;
+    font-weight: bold;
+    padding: 0 0 ($base-spacing / 2) 0;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(10 of 12);
+
+    #navigation-panel {
+      display: block !important;
+    }
+
+    .js-child-toggle,
+    #js-menu-toggle {
+      display: none;
+    }
+
+    .current-menu-item,
+    .current_page_item {
+      background: darken($rose-pink, 10);
+    }
+
+    a {
+      padding: 11px 20px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .menu > ul,
+    ul.menu {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+
+      &.menu-item-has-children > a:after,
+      &.page_item_has_children > a:after {
+        font-family: "Genericons";
+        font-size: 8px;
+        margin-left: 3px;
+        content: '\f502';
+      }
+
+      &:hover {
+        background: darken($rose-pink, 10);
+
+        ul {
+          display: block;
+        }
+      }
+    }
+
+    ul.sub-menu,
+    ul.children {
+      background: darken($rose-pink, 5);
+      display: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+
+      a {
+        display: block;
+      }
+
+      li {
+        display: block;
+        padding: ($base-spacing / 4) ($base-spacing / 3);
+        min-width: 150px;
+
+        &.menu-item-has-children > a:after,
+        &.page_item_has_children > a:after {
+          font-family: "Genericons";
+          font-size: 8px;
+          margin-left: 5px;
+          content: '\f501';
+        }
+
+        &:hover ul {
+          display: block;
+        }
+
+        &:hover {
+          background: darken($rose-pink, 10);
+        }
+      }
+
+      ul.sub-menu,
+      ul.children {
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 150px;
+      }
+    }
+  }
+}
+
+.js-child-toggle {
+  padding: 3px 5px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+
+  &:before {
+    content: '\f431';
+    font-family: Genericons;
+  }
+
+  &.toggled-on {
+    background: #2C5999;
+
+    &:before {
+      content: '\f432';
+    }
+  }
+}
+
+#header-search-container {
+  @include clearfix();
+
+  background: $rose-pink;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  display: none;
+  padding: ($base-spacing / 2) ($base-spacing / 3);
+
+  .search-form {
+    @include outer-container();
+
+    @include media($medium-screen-up) {
+      float: right;
+      max-width: 300px;
+    }
+  }
+}

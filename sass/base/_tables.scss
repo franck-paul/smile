@@ -1,0 +1,25 @@
+// borrowed from Foundation
+table {
+  background: #fff;
+  margin: ($base-spacing / 2) 0;
+  table-layout: fixed;
+  width: 100%;
+
+  thead {
+    background: #f5f5f5;
+  }
+
+  tfoot {
+    background: #f5f5f5;
+  }
+
+  tr {
+    vertical-align: middle;
+    
+    &.even,
+    &.alt,
+    &:nth-of-type(even) {
+      background: #f9f9f9;
+    }
+  }
+}
