@@ -17,7 +17,7 @@ $this->registerModule(
 	/* Name */			"Smile",
 	/* Description*/	"Smile (based on eponym Wordpress theme designed by Stephen Dickinson)",
 	/* Author */		"Franck Paul",
-	/* Version */		'1.0',
+	/* Version */		'1.1',
 	array(
 		/* Type */				'type' =>					'theme',
 		/* tplset */			'tplset' =>					'currywurst',
