@@ -28,7 +28,8 @@ on_stylesheet_saved do |file|
     result = AutoprefixerRails.process(css,
       from: file,
       to:   file,
-      map:  { prev: File.read(map), inline: false })
+      map:  { prev: File.read(map), inline: false },
+      browsers: 'last 5 versions')
     File.open(file, 'w') { |io| io << result.css }
     File.open(map,  'w') { |io| io << result.map }
   else
