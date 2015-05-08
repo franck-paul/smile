@@ -1,8 +1,6 @@
 #colophon {
   background: $rose-pink;
-  -webkit-box-shadow: 0px 3px 4px 4px rgba(50, 50, 50, 0.33);
-  -moz-box-shadow:    0px 3px 4px 4px rgba(50, 50, 50, 0.33);
-  box-shadow:         0px 3px 4px 4px rgba(50, 50, 50, 0.33);
+  box-shadow: 0px 3px 4px 4px rgba(50, 50, 50, 0.33);
   padding: ($base-spacing / 2) ($base-spacing / 3);
 
   a {

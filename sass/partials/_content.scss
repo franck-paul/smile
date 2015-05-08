@@ -30,9 +30,7 @@ article.post {
 
   &.sticky {
     background: darken($base-background-color, 5);
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
-    -moz-box-shadow:    2px 2px 6px 0px rgba(50, 50, 50, 0.33);
-    box-shadow:         2px 2px 6px 0px rgba(50, 50, 50, 0.33);
+    box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
     padding: ($base-spacing / 2) ($base-spacing / 3);
   }
 }
@@ -132,9 +130,7 @@ article.post {
   @include clearfix();
 
   background: darken($base-background-color, 5);
-  -webkit-box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
-  -moz-box-shadow:    inset 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
-  box-shadow:         inset 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
+  box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
   margin-bottom: ($base-spacing / 2);
   padding: ($base-spacing / 2) ($base-spacing * 3);
 }

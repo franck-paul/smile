@@ -5,8 +5,6 @@
 .custom-header {
   background: no-repeat center;
   background-size: cover !important;
-  -moz-background-size: cover !important;
-  -webkit-background-size: cover !important;
 }
 
 .header-image {
@@ -34,9 +32,7 @@
 
 #header-top-bar-wrapper {
   background: darken($rose-pink, 5);
-  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
-  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
-  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
 }
 
 #header-top-bar {
@@ -228,9 +224,7 @@
   @include clearfix();
 
   background: $rose-pink;
-  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
-  -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.33);
-  box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.33);
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.33);
   display: none;
   padding: ($base-spacing / 2) ($base-spacing / 3);
 
