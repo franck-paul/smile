@@ -29,6 +29,14 @@ Pour le plugin Gravatar, il faut, une fois ce dernier activé pour le blog :
 * Définir la taille de l'image pour les commentaires à 64 pixels
 * Supprimer (ou mettre en commentaire) les éventuels styles
 
+
+## Compilation Sass
+
+Dans le répertoire principal :
+
+	sass --watch ./sass:./
+
 ## History
 
 * 1.0 Initial release
+* 1.1 Switch from currywurst to dotty templateset and remove outline:none; from CSS — a11y matters

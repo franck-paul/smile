@@ -20,7 +20,7 @@ $this->registerModule(
 	/* Version */		'1.1',
 	array(
 		/* Type */				'type' =>					'theme',
-		/* tplset */			'tplset' =>					'currywurst',
+		/* tplset */			'tplset' =>					'dotty',
 		/* Widget title */		'widgettitleformat' =>		'<h1 class="widget-title">%s</h1>',
 		/* Widget subtitle */	'widgetsubtitleformat' =>	'<h2 class="widget-subtitle">%s</h2>'
 	)
