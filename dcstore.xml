@@ -1,0 +1,12 @@
+<modules xmlns:da="http://dotaddict.org/da/">
+  <module id="smile">
+    <name>Smile</name>
+    <version>1.2</version>
+    <author>Franck Paul</author>
+    <desc>Smile (based on eponym Wordpress theme designed by Stephen Dickinson)</desc>
+    <file>https://github.com/franck-paul/smile/releases/download/1.2/theme-smile.zip</file>
+    <da:dcmin>2.13</da:dcmin>
+    <da:details>https://open-time.net/?q=smile</da:details>
+    <da:support>https://github.com/franck-paul/smile</da:support>
+  </module>
+</modules>
