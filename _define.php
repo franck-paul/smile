@@ -22,6 +22,10 @@ $this->registerModule(
         'type'                 => 'theme',                               // Type
         'tplset'               => 'dotty',                               // tplset
         'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',    // Widget title
-        'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>'  // Widget subtitle
+        'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>', // Widget subtitle
+
+        'details'    => 'https://open-time.net/?q=smile',       // Details URL
+        'support'    => 'https://github.com/franck-paul/smile', // Support URL
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/main/dcstore.xml'
     ]
 );
