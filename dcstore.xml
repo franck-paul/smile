@@ -1,8 +1,8 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="smile">
-    <name>Smile</name>
+    <name>Smile (based on eponym Wordpress theme designed by Stephen Dickinson)</name>
     <version>1.2</version>
-    <author>Franck Paul</author>
+    <author>Smile (based on eponym Wordpress theme designed by Stephen Dickinson)</author>
     <desc>Smile (based on eponym Wordpress theme designed by Stephen Dickinson)</desc>
     <file>https://github.com/franck-paul/smile/releases/download/1.2/theme-smile-1.2.zip</file>
     <da:dcmin>2.13</da:dcmin>
