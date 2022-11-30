@@ -13,19 +13,19 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'Smile',                                                                 // Name
-    'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)', // Description
-    'Franck Paul',                                                           // Author
-    '1.2',                                                                   // Version
+    'Smile',
+    'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)',
+    'Franck Paul',
+    '2.0',
     [
-        'requires'             => [['core', '2.13']],                    // Dependencies
-        'type'                 => 'theme',                               // Type
-        'tplset'               => 'dotty',                               // tplset
-        'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',    // Widget title
-        'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>', // Widget subtitle
+        'requires'             => [['core', '2.24']],
+        'type'                 => 'theme',
+        'tplset'               => 'dotty',
+        'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',
+        'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>',
 
-        'details'    => 'https://open-time.net/?q=smile',       // Details URL
-        'support'    => 'https://github.com/franck-paul/smile', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/master/dcstore.xml'
+        'details'    => 'https://open-time.net/?q=smile',
+        'support'    => 'https://github.com/franck-paul/smile',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/master/dcstore.xml',
     ]
 );
