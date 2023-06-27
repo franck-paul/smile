@@ -1,10 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
-msgid ""
-msgstr ""
 "Project-Id-Version: Dotclear 2 smile module\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-28 17:09+0100\n"

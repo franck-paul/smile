@@ -1,5 +1,11 @@
 # Thème Smile pour Dotclear 2
 
+[![Release](https://img.shields.io/github/v/release/franck-paul/smile)](https://github.com/franck-paul/smile/releases)
+[![Date](https://img.shields.io/github/release-date/franck-paul/smile)](https://github.com/franck-paul/smile/releases)
+[![Issues](https://img.shields.io/github/issues/franck-paul/smile)](https://github.com/franck-paul/smile/issues)
+[![Dotaddict](https://img.shields.io/badge/dotaddict-official-green.svg)](https://themes.dotaddict.org/dc2/details/smile)
+[![License](https://img.shields.io/github/license/franck-paul/smile)](https://github.com/franck-paul/smile/blob/master/LICENSE)
+
 Thème pour [Dotclear 2](https://fr.dotclear.org/) adapté du l'éponyme thème Smile développé pour Wordpress par Stephen Dickinson ([Steve's Space](https://stephencottontail.wordpress.com/)).
 
 ## Résumé
