@@ -12,7 +12,7 @@ $this->registerModule(
     'Smile',
     'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)',
     'Franck Paul',
-    '3.0',
+    '4.0',
     [
         'requires'             => [['core', '2.27'], ['php', '8.1']],
         'type'                 => 'theme',
