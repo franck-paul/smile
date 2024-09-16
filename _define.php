@@ -22,6 +22,6 @@ $this->registerModule(
 
         'details'    => 'https://open-time.net/?q=smile',
         'support'    => 'https://github.com/franck-paul/smile',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/master/dcstore.xml',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/main/dcstore.xml',
     ]
 );
