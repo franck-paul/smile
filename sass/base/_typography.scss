@@ -57,7 +57,8 @@ a {
     text-decoration: underline;
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     color: $hover-link-color;
     // outline: none;
   }
@@ -96,7 +97,7 @@ cite {
   font-style: italic;
 
   &:before {
-    content: "\2014 \00A0";
+    content: '\2014 \00A0';
   }
 }
 
@@ -111,4 +112,20 @@ code {
   background: darken($base-background-color, 10);
   border-radius: 3px;
   padding: ($base-spacing / 4);
+}
+
+sup,
+sub {
+  font-size: calc(0.5em + 4px);
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: calc(-0.83 * (1em - 4px));
+}
+
+sub {
+  top: calc(0.415 * (1em - 4px));
 }
