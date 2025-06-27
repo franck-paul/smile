@@ -13,9 +13,9 @@ $this->registerModule(
     'Smile',
     'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)',
     'Franck Paul',
-    '5.1',
+    '6.0',
     [
-        'date'                 => '2003-08-13T13:42:00+0100',
+        'date'                 => '2025-06-27T14:23:13+0200',
         'requires'             => [['core', '2.35']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
