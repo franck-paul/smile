@@ -16,14 +16,16 @@ $this->registerModule(
     '5.1',
     [
         'date'                 => '2003-08-13T13:42:00+0100',
-        'requires'             => [['core', '2.28']],
+        'requires'             => [['core', '2.35']],
         'type'                 => 'theme',
         'tplset'               => 'dotty',
         'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',
         'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>',
+        'overload'             => true,
 
         'details'    => 'https://open-time.net/?q=smile',
         'support'    => 'https://github.com/franck-paul/smile',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );
