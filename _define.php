@@ -9,23 +9,27 @@
  * @copyright Franck Paul (contact@open-time.net)
  * @copyright GPL-2.0
  */
-$this->registerModule(
-    'Smile',
-    'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)',
-    'Franck Paul',
-    '7.1',
-    [
-        'date'                 => '2026-04-05T11:54:35+0200',
-        'requires'             => [['core', '2.36']],
-        'type'                 => 'theme',
-        'tplset'               => 'dotty',
-        'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',
-        'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>',
-        'overload'             => true,
+declare(strict_types=1);
 
-        'details'    => 'https://open-time.net/?q=smile',
-        'support'    => 'https://github.com/franck-paul/smile',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/main/dcstore.xml',
-        'license'    => 'gpl2',
-    ]
-);
+if (isset($this) && is_object($this) && method_exists($this, 'registerModule') && isset($this->id) && is_string($this->id)) {
+    $this->registerModule(
+        'Smile',
+        'Smile (based on eponym Wordpress theme designed by Stephen Dickinson)',
+        'Franck Paul',
+        '7.1',
+        [
+            'date'                 => '2026-04-05T11:54:35+0200',
+            'requires'             => [['core', '2.36']],
+            'type'                 => 'theme',
+            'tplset'               => 'dotty',
+            'widgettitleformat'    => '<h1 class="widget-title">%s</h1>',
+            'widgetsubtitleformat' => '<h2 class="widget-subtitle">%s</h2>',
+            'overload'             => true,
+
+            'details'    => 'https://open-time.net/?q=smile',
+            'support'    => 'https://github.com/franck-paul/smile',
+            'repository' => 'https://raw.githubusercontent.com/franck-paul/smile/main/dcstore.xml',
+            'license'    => 'gpl2',
+        ]
+    );
+}
