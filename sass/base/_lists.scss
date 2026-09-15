@@ -1,19 +1,19 @@
 ul {
   list-style-type: disc;
-  padding-left: $base-spacing;
+  padding-inline-start: $base-spacing;
 }
 
 ol {
   list-style-type: decimal;
-  padding-left: $base-spacing;
+  padding-inline-start: $base-spacing;
 }
 
 dl {
-  margin-bottom: $base-spacing / 2;
+  margin-block-end: $base-spacing / 2;
 
   dt {
     font-weight: bold;
-    margin-top: $base-spacing / 2;
+    margin-block-start: $base-spacing / 2;
   }
 
   dd {

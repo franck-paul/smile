@@ -16,7 +16,7 @@
 #footer-top-bar {
   @include outer-container();
 
-  margin-bottom: $base-spacing;
+  margin-block-end: $base-spacing;
 
   .site-info {
     @include span-columns(4);
@@ -45,7 +45,7 @@
 
   li {
     display: inline-block;
-    padding-right: ($base-spacing / 3);
+    padding-inline-end: ($base-spacing / 3);
 
     a:before {
       content: '\f511';

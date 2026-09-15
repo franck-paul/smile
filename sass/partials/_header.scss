@@ -10,10 +10,10 @@
 .header-image {
   line-height: 0;
   margin: 0;
-  width: 100%;
+  inline-size: 100%;
 
   img {
-    width: 100%;
+    inline-size: 100%;
   }
 }
 
@@ -52,8 +52,8 @@
   cursor: pointer;
   line-height: 45px;
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block-start: 0;
+  inset-inline-end: 0;
 
   .genericon {
     font-size: 36px;
@@ -71,9 +71,9 @@
 }
 
 #site-navigation {
-  float: left;
+  float: inline-start;
   position: relative;
-  width: 100%;
+  inline-size: 100%;
 
   #navigation-panel {
     display: none;
@@ -140,7 +140,7 @@
       &.page_item_has_children > a:after {
         font-family: "Genericons";
         font-size: 8px;
-        margin-left: 3px;
+        margin-inline-start: 3px;
         content: '\f502';
       }
 
@@ -168,13 +168,13 @@
       li {
         display: block;
         padding: ($base-spacing / 4) ($base-spacing / 3);
-        min-width: 150px;
+        min-inline-size: 150px;
 
         &.menu-item-has-children > a:after,
         &.page_item_has_children > a:after {
           font-family: "Genericons";
           font-size: 8px;
-          margin-left: 5px;
+          margin-inline-start: 5px;
           content: '\f501';
         }
 
@@ -193,8 +193,8 @@
         margin: 0;
         padding: 0;
         position: absolute;
-        top: 0;
-        left: 150px;
+        inset-block-start: 0;
+        inset-inline-start: 150px;
       }
     }
   }
@@ -203,8 +203,8 @@
 .js-child-toggle {
   padding: 3px 5px;
   position: absolute;
-  right: 5px;
-  top: 0;
+  inset-inline-end: 5px;
+  inset-block-start: 0;
 
   &:before {
     content: '\f431';
@@ -232,8 +232,8 @@
     @include outer-container();
 
     @include media($medium-screen-up) {
-      float: right;
-      max-width: 300px;
+      float: inline-end;
+      max-inline-size: 300px;
     }
   }
 }

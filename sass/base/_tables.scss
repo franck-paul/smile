@@ -3,7 +3,7 @@ table {
   background: #fff;
   margin: ($base-spacing / 2) 0;
   table-layout: fixed;
-  width: 100%;
+  inline-size: 100%;
 
   thead {
     background: #f5f5f5;
@@ -15,7 +15,7 @@ table {
 
   tr {
     vertical-align: middle;
-    
+
     &.even,
     &.alt,
     &:nth-of-type(even) {

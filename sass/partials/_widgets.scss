@@ -1,12 +1,12 @@
 // global widgets
 .widget {
-  margin-bottom: ($base-spacing * 2);
+  margin-block-end: ($base-spacing * 2);
 }
 
 .widget-title,
 .widgettitle {
-  border-bottom: 2px solid #000;
-  margin-bottom: ($base-spacing / 2);
+  border-block-end: 2px solid #000;
+  margin-block-end: ($base-spacing / 2);
 }
 
 // primary sidebar overrides

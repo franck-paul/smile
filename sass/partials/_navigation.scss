@@ -30,7 +30,7 @@
 .post-navigation {
   @include outer-container();
 
-  margin-bottom: $base-spacing;
+  margin-block-end: $base-spacing;
 
   span {
     display: block;
@@ -40,14 +40,14 @@
   .nav-previous {
     @include span-columns(2);
 
-    text-align: right;
+    text-align: end;
   }
 
   .nav-next {
     @include span-columns(2);
     @include omega();
 
-    text-align: left;
+    text-align: start;
   }
 }
 

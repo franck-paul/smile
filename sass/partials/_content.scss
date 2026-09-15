@@ -15,7 +15,7 @@ article.page,
 article.post {
   @include outer-container();
 
-  margin-bottom: $base-spacing * 2;
+  margin-block-end: $base-spacing * 2;
 
   @include media($x-large-screen-up) {
     .entry-header {
@@ -41,7 +41,7 @@ article.post {
 }
 
 .entry-header {
-  margin-bottom: ($base-spacing / 2);
+  margin-block-end: ($base-spacing / 2);
 
   @include media($x-large-screen-up) {
     .posted-on,
@@ -72,7 +72,7 @@ article.post {
 
 .footer-meta {
   font-family: $sans-serif;
-  margin-top: ($base-spacing / 2);
+  margin-block-start: ($base-spacing / 2);
 
   span {
     display: block;
@@ -83,14 +83,14 @@ article.post {
       @include transition(all 0.2s ease);
 
       background: lighten($rose-pink, 5);
-      border-left: 4px solid $rose-pink;
+      border-inline-start: 4px solid $rose-pink;
       color: black;
       margin: 0 ($base-spacing / 3) ($base-spacing / 4) 0;
       padding: 2px 4px;
 
       &:hover {
         background: $rose-pink;
-        border-left: 4px solid darken($rose-pink, 5);
+        border-inline-start: 4px solid darken($rose-pink, 5);
         color: black;
         text-decoration: none;
       }
@@ -131,7 +131,7 @@ article.post {
 
   background: darken($base-background-color, 5);
   box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.33);
-  margin-bottom: ($base-spacing / 2);
+  margin-block-end: ($base-spacing / 2);
   padding: ($base-spacing / 2) ($base-spacing * 3);
 }
 

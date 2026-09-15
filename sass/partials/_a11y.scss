@@ -1,8 +1,8 @@
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-  height: 1px;
-  width: 1px;
+  block-size: 1px;
+  inline-size: 1px;
   overflow: hidden;
 
   &:hover,
@@ -16,13 +16,15 @@
     display: block;
     font-size: 14px;
     font-weight: bold;
-    height: auto;
-    left: 5px;
+    block-size: auto;
+    inset-inline-start: 5px;
     line-height: normal;
-    padding: 15px 23px 14px;
+    padding-block-start: 15px;
+    padding-block-end: 14px;
+    padding-inline: 23px;
     text-decoration: none;
-    top: 5px;
-    width: auto;
+    inset-block-start: 5px;
+    inline-size: auto;
     z-index: 100000;
   }
 }

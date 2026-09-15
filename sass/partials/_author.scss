@@ -4,8 +4,8 @@
 
     border: 5px solid $rose-pink;
     border-radius: 50%;
-    float: left;
-    margin-right: $base-spacing;
+    float: inline-start;
+    margin-inline-end: $base-spacing;
 
     &:hover {
       border: 3px solid darken($rose-pink, 5);
